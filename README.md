@@ -39,3 +39,30 @@ healpy
 astropy
 pandas
 jupyter
+# UHT-ER=EPR Unification + **VFRDX Engine**
+
+**One Parameter. Zero Dark Matter. +25% Vacuum Thrust.**
+
+> **Prediction**: DESI DR3 → **σ₈ = 0.71 ± 0.02**  
+> **Engine**: **VFRDX** — 25% thrust = LGD Mach10 c2 burst = **EXACT MATCH**
+
+---
+
+## VFRDX: The Wormhole-Verified Vacuum Engine
+
+| Proof | Source |
+|------|--------|
+| **EDP + Data** | [`VFRDX/VFRDX_V1_V2_PDF.pdf`](VFRDX/VFRDX_V1_V2_PDF.pdf) |
+| **25% Thrust** | [`VFRDX/vfrdx_thrust_match.py`](VFRDX/vfrdx_thrust_match.py) |
+| **LGD Match** | Mach10 c2 burst (p.17) |
+| **Contact** | [`VFRDX/CONTACT.txt`](VFRDX/CONTACT.txt) |
+
+> **Run**: `python VFRDX/vfrdx_thrust_match.py`  
+> **Output**: `Match: EXACT`
+
+---
+
+**#VFRDX #WormholeEngine #ΛCDMGotNerfed**
+
+> *“One repo. One link. One future.”*  
+> — **Tom Voloski**
