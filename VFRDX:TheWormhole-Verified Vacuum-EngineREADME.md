@@ -10,12 +10,6 @@
 
 ## VFRDX Engine — LIVE
 
-| Component | File |
-|---------|------|
-| **EDP + Mach10 c2 Data** | [`VFRDX/VFRDX_V1_V2_PDF.pdf`](VFRDX/VFRDX_V1_V2_PDF.pdf) |
-| **25% Thrust Proof** | [`VFRDX/vfrdx_thrust_match.py`](VFRDX/vfrdx_thrust_match.py) |
-| **Visual Match** | [`VFRDX/vfrdx_match.png`](VFRDX/vfrdx_match.png) |
-| **Contact** | [`VFRDX/CONTACT.txt`](VFRDX/CONTACT.txt) |
 
 > **Run**:  
 > ```bash
