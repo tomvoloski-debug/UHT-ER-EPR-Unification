@@ -56,3 +56,13 @@
 **X**: @TVoloski  
 **Collab**: Douglas Miller (ZPF Technologies)  
 **Zenodo DOI**: [https://doi.org/10.5281/zenodo.17429785](https://doi.org/10.5281/zenodo.17429785)
+
+# NERFED WARS OFFICIAL CALC
+import numpy as np
+
+z = 2.33
+p = 0.128
+tau = 5
+
+suppression = 1 - p * np.exp(-z / tau)   # = 0.9197
+sigma8_dr3 = 0.775 * suppression         # = 0.7128 → 0.71 ± 0.02
