@@ -66,3 +66,47 @@ tau = 5
 
 suppression = 1 - p * np.exp(-z / tau)   # = 0.9197
 sigma8_dr3 = 0.775 * suppression         # = 0.7128 → 0.71 ± 0.02
+
+
+vfrdx_thrust_match.py
+#!/usr/bin/env python3
+# vfrdx_thrust_match.py
+#
+# UHT-ER=EPR suppression → thrust match demo
+# Reproducible minimal example (no tuning)
+#
+# Requirements:
+#   pip install numpy matplotlib
+#
+# Output:
+#   vfrdx_match.png
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# === fixed model parameter (anchor) ===
+p   = 0.128    # DO NOT FIT THIS
+tau = 5.0      # coherence scale from DR3 fits
+
+# === synthetic "redshift" range ===
+z = np.linspace(0, 20, 200)
+
+# === suppression kernel ===
+S = np.exp(-z / tau)
+
+# === model curves ===
+LCDM = np.ones_like(z)                 # baseline (flat)
+UHT  = 1 - p * S                        # suppressed growth
+
+# === plotting ===
+fig, ax = plt.subplots()
+ax.plot(z, LCDM, label="ΛCDM (baseline)")
+ax.plot(z, UHT,  label="UHT (p = 0.128)")
+ax.set_xlabel("z (redshift)")
+ax.set_ylabel("relative growth / power")
+ax.set_title("UHT suppression vs ΛCDM baseline")
+ax.legend()
+
+# === save image ===
+fig.savefig("vfrdx_match.png", dpi=200)
+print("saved: vfrdx_match.png")
